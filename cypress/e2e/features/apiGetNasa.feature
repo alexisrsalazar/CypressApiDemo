@@ -2,7 +2,7 @@ Feature: API Call GET in NASA API
 
     Scenario: I want get the Astronomy Picture of the Day
         Given I am in Nasa API
-        When I call the API with '<date>' parameter
+        When I want to get the APOD and I call the API with '<date>' parameter
         Then I should receive 200 response code and response body '<title>'
 
         Examples:
