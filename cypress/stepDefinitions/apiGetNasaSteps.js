@@ -10,7 +10,7 @@ Given("I am in Nasa API", () => {
 })
 
 When("I want to get the APOD and I call the API with '<date>' parameter", (date) => {
-    apiUrl = baseUrl + "planetary/apod" + "?date=" + date + '&api_key=' + apiKey.api_Key
+    apiUrl = baseUrl + "planetary/apod?date=" + date + '&api_key=' + apiKey.api_Key
     request = cy.request({
         method: 'GET',
         url: apiUrl
